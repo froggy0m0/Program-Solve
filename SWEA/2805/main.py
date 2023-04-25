@@ -1,6 +1,7 @@
 T = int(input())
 
 for i in range(1, T+1):
+    res = 0
     N = int(input())
     farmList = [input() for _ in range(N)]
 
@@ -15,3 +16,23 @@ for i in range(1, T+1):
             width -= 1
 
     print(f"#{i}", res)
+
+
+# T = int(input())
+#
+# for taseCaseCount in range(1, T+1):
+#     N = int(input())
+#     li = []
+#     for _ in range(N):
+#         li.append(list(map(int, input())))
+#
+#     result = 0
+#     baseline = N // 2
+#     var = 0
+#     for i in range(N):
+#         result += sum(li[i][baseline-var:baseline+var+1])
+#         if i < baseline :
+#             var += 1
+#         else :
+#             var -= 1
+#     print(f"#{taseCaseCount}", result)
